@@ -9,7 +9,7 @@ input()
 ser.write(b'Start\n')
 
 print('Programmet er nu i gang med at indsamle data. Vent venligst.\n')
-with open('outputfile.csv', 'w', newline='', encoding='utf-8') as csvfile:
+with open('outputfile.txt', 'w', newline='', encoding='utf-8') as csvfile:
     outputWriter = csv.writer(csvfile, delimiter=';')
     for i in range(0, 510):
         outputValue = str(ser.readline(), 'utf-8')[:-1]
