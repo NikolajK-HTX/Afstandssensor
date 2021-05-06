@@ -2,7 +2,7 @@ import serial
 import csv
 
 # COM3 skal ændres efter hvilken port Arduino Unoen sidder i
-ser = serial.Serial('COM3', 57600, timeout=1) 
+ser = serial.Serial('COM5', 115200, timeout=1) 
 
 print('Tryk på enter for at starte indsamlingen af data :-)')
 input()

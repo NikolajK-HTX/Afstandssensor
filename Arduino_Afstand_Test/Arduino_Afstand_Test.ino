@@ -10,8 +10,8 @@ bool started = false;
 
 // indstillinger til antallet af målinger
 // det kan være de skal indtastes fra Python programmet
-int measurementsPerSecond = 10;
-int measuringTimeInSeconds = 10;
+int measurementsPerSecond = 50;
+int measuringTimeInSeconds = 5;
 
 int timeBetweenMeasurement = 1000 / measurementsPerSecond;
 int totalAmountOfMeasurements = measurementsPerSecond * measuringTimeInSeconds;
@@ -27,7 +27,7 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   // initialize serial communication:
-  Serial.begin(57600);
+  Serial.begin(115200);
 }
 
 void loop() {
